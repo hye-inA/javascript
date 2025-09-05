@@ -1,0 +1,23 @@
+<!-- 
+클로저를 이용한 카운터 함수를 작성하세요.
+
+// 사용 예시
+const counter = makeCounter();
+console.log(counter()); // 1
+console.log(counter()); // 2
+console.log(counter()); // 3
+-->
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <script>
+        function makeCounter() {
+        let count = 0; 
+            return function() {
+                count++;
+                return count;
+            };
+        }
+    </script>
+</body>

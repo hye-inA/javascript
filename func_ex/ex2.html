@@ -1,0 +1,24 @@
+<!-- 
+배열에서 중복 제거
+주어진 배열에서 중복된 값
+
+const strArray = ['a', 'b', 'a', 'c', 'b'];
+
+출력 : ['a', 'b', 'c']
+-->
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <script>
+        function removeDuplicates(arr) {
+            const result = [];
+            for (const item of arr) {
+                if (!result.includes(item)) {
+                    result.push(item);
+                }
+            }
+            return result;
+        }
+    </script>
+</body>

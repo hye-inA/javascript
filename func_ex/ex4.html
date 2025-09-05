@@ -1,0 +1,34 @@
+<!-- 
+function greet(callback, context) {
+    callback.call(context);
+}
+
+const person = {
+    name: 'Alice',
+    sayHello: function() {
+        console.log('Hello, ' + this.name);
+    }
+};
+
+greet(person.sayHello, person); // Hello, Alice
+-->
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <script>
+        function greet(callback, context) {
+    callback.call(context);
+}
+
+const person = {
+    name: 'Alice',
+    sayHello: function() {
+        console.log('Hello, ' + this.name);
+    }
+};
+
+
+greet(person.sayHello, person);
+    </script>
+</body>
