@@ -1,0 +1,25 @@
+<!-- 
+5. 나이를 기준으로 객체 배열 정렬하기 (sortByAge 함수)  Array 객체의 sort 메소드 사용
+
+const users = [
+    { name: 'Alice', age: 30 },
+    { name: 'Bob', age: 25 },
+    { name: 'Charlie', age: 35 }
+];
+-->
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <script>
+       const users = [
+            { name: 'Alice', age: 30 },
+            { name: 'Bob', age: 25 },
+            { name: 'Charlie', age: 35 }
+        ];
+
+        function sortByAge(users) {
+            return users.sort((a, b) => a.age - b.age);
+        }
+    </script>
+</body>
